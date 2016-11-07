@@ -1,0 +1,13 @@
+<div class="modal-header">
+    <h3 class="modal-title" id="modal-title">User Basic Info</h3>
+</div>
+<div class="modal-body" id="modal-body">
+    <b>First Name</b>: <p>{{ $ctrl.user.attributes.first_name }}</p>
+    <b>Last Name</b>: <p>{{ $ctrl.user.attributes.last_name }}</p>
+    <b>Age</b>: <p>{{ $ctrl.user.attributes.age }}</p>
+    <b>Birth Date</b>: <p>{{ $ctrl.user.attributes.birth_date }}</p>
+</div>
+<div class="modal-footer">
+    <button class="btn btn-primary" type="button" ng-click="$ctrl.ok()">Edit tasks</button>
+    <button class="btn btn-warning" type="button" ng-click="$ctrl.cancel()">Cancel</button>
+</div>

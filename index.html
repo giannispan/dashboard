@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="dashboard">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Task Manager</title>
+    <!-- Bootstrap -->
+    <!-- build:css styles/main.css -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="node_modules/angular-ui-bootstrap/dist/ui-bootstrap-csp.css" rel="stylesheet">
+    <link href="styles/mystyles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div ui-view="header"></div>
+    <div ui-view="content"></div>
+    <!-- build:js scripts/main.js -->
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/lodash/dist/lodash.min.js"></script>
+    <script src="node_modules/angular-ui-bootstrap/dist/ui-bootstrap.js"></script>
+    <script src="node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>
+    <!-- entry script -->
+    <script src="scripts/app.js"></script>
+    <!-- controllers -->
+    <script src="scripts/controllers/userController.js"></script>
+    <script src="scripts/controllers/tasksController.js"></script>
+    <script src="scripts/controllers/modalAddTaskController.js"></script>
+    <script src="scripts/controllers/modalEditTaskController.js"></script>
+    <script src="scripts/controllers/userProfileController.js"></script>
+    <!-- services -->
+    <script src="scripts/services/services.js"></script>
+    <script src="scripts/services/authorization.js"></script>
+</body>
+
+</html>

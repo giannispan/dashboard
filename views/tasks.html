@@ -1,0 +1,45 @@
+<div class="container">
+    <h3>Task List</h3>
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <td>
+                    Title
+                </td>
+                <td>
+                    Role
+                </td>
+                <td>
+                    State
+                </td>
+                <td>
+                    Actions
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="task in vm.filterTasks(member)">
+                <td>
+                    {{task.attributes.title}}
+                </td>
+                <td>
+                    {{task.attributes.role}}
+                </td>
+                <td>
+                    {{task.attributes.state}}
+                </td>
+                <td>
+                    <button ng-click="vm.openEdit(task.id)" class="btn btn-xs btn-info" type="button">
+                        Edit Task
+                    </button>
+                    <button ng-click="vm.remove(task)" class="btn btn-xs btn-danger" type="button">
+                        Delete Task
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <button ng-click="vm.open()" class="btn btn-xs btn-success" type="button">
+        Add New Task
+    </button>
+</div>
